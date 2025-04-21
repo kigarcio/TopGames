@@ -3,60 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Games</title>
+    <title>Game price</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/e6e7d84879.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="navbar">
-                <div class="navbar__logo">
-                    <span><span class="top">Top</span>Games</span>
-                </div>
-                <div class="navbar__menu">
-                    <div class="navbar__menu--left">
-                        <a href="#">Products</a>
-                        <a href="#">About us</a>
-                        <a href="#">Help</a>
-                    </div>
-                    <div class="navbar__menu--right">
-                        <button class="bars"><i class="fa-solid fa-bars"></i>/button>
-                        <button class="btn-join"><a href="#">Join us</a></button>
-                    </div>
-                </div>
+    <div class="box">
+        <div class="box__title">
+            <h1>Game price</h1>
+        </div>
+        <div class="box__input">
+            <input type="text" class="input-game">
+            <button class="btn-game">Search</button>
+        </div>
+        <div class="box__display">
+            <div class="box__display--left">
+                <h2>Game list</h2>
+                
+            </div>
+            <div class="box__display--right">
+                <h2 class="game-title">Tomb rider</h2>
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/8000/capsule_sm_120.jpg?t=1592494287" alt="" class="img-game">
+                <p class="normal-price-title">Normal price: <span class="normal-price"></span></p>
+                <p class="sale-price-title">Sale price<span class="sale-price"></span></p>
+                <p class="steam-link-title"><a href="" class="steam-link">Go to steam</a></p>
             </div>
         </div>
-    </nav>
-    <main>
-        <section class="slider-section">
-            <div class="wrapper">
-                <div class="slider">
-                    <div class="slider-img">
-                        <img class="desktop" src="./img/mario-1557974_1920.jpg" alt="mario and luigi" >
-                        <img class="phone" src="./img/mario-1557974_640.jpg" alt="mario and luigi" >
-                    </div>
-                    <div class="slider-btns">
-                        <div class="slider-btns-left">
-                            <button class="r-btn"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button class="r-btn"><i class="fa-solid fa-arrow-right"></i></butto>
-                        </div>
-                        
-                       <div class="slider-btns-right"> 
-                        <button class="s-btn"><i class="fa-regular fa-circle"></i></button>
-                        <button class="s-btn"><i class="fa-regular fa-circle"></i></button>
-                        <button class="s-btn"><i class="fa-regular fa-circle"></i></button>
-                        <button class="s-btn"><i class="fa-regular fa-circle"></i></button></div>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    </div>
+   
     <script src="./js/main.js"></script>
 </body>
 </html>
