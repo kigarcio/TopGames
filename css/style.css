@@ -80,6 +80,7 @@ body {
   align-items: center;
 }
 .box__display--left {
+  align-self: flex-start;
   width: 500px;
   background-color: #1b1b1b;
   border-radius: 15px;
@@ -92,6 +93,11 @@ body {
 .box__display--left p {
   margin: 0.5rem;
   font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.box__display--left p:hover {
+  color: #630f0f;
 }
 .box__display--left h2 {
   font-size: 1.4rem;
@@ -116,4 +122,13 @@ body {
 }
 .box__display--right h2 {
   font-size: 1.4rem;
+}
+.box__display--right a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #eee;
+  transition: 0.3s;
+}
+.box__display--right a:hover {
+  color: #630f0f;
 }/*# sourceMappingURL=style.css.map */
