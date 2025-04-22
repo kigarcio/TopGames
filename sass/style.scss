@@ -21,6 +21,7 @@ body{
     position: relative;
    padding: 4rem;
     width: 1200px;
+    height: 100%;
     border: 2px solid black;
     border-radius: 15px;
     &__title{
@@ -139,4 +140,7 @@ body{
         }
     
     }
+}
+.left-display-none{
+    display: none;
 }

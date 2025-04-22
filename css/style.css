@@ -23,6 +23,7 @@ body {
   position: relative;
   padding: 4rem;
   width: 1200px;
+  height: 100%;
   border: 2px solid black;
   border-radius: 15px;
 }
@@ -131,4 +132,8 @@ body {
 }
 .box__display--right a:hover {
   color: #630f0f;
+}
+
+.left-display-none {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

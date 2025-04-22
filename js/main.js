@@ -10,6 +10,7 @@ const steamLink = document.querySelector(".steam-link");
 
 const displayLeft = document.querySelector(".box__display--left");
 const isOnS = document.querySelector('.sale-price-title')
+const boxLeftTitle = document.querySelector('.box__display--left-title')
 
 const API_URL = "https://www.cheapshark.com/api/1.0/games?title=";
 const searchGame = () => {
@@ -20,18 +21,22 @@ const searchGame = () => {
             //console.log(data);
 			data.forEach((games) => {
 				//console.log(games);
-                
                 const titleGame = document.createElement("p");
 				titleGame.textContent = games.external;
-				displayLeft.append(titleGame);
+				
+                    boxLeftTitle.append(titleGame);
 				const gameList = titleGame;
-               console.log(gameList);
+            
+                
+                
+                
             
                 //console.log(gameList.textContent);
-				gameList.addEventListener("click", () => {
+				titleGame.addEventListener("click", () => {
                             //console.log(gameList.textContent);
                                 //title.textContent =data[0].external
-                                title.textContent = gameList.textContent
+                               
+                                title.textContent = titleGame.textContent
                 //console.log(data);
                 const clickGame = data.find(
                     (game) => game.external.toLowerCase() === title.textContent.toLowerCase()
