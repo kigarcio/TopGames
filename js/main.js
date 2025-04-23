@@ -31,7 +31,7 @@ const searchGame = () => {
                 
                 
             
-                //console.log(gameList.textContent);
+                console.log(gameList.textContent);
 				titleGame.addEventListener("click", () => {
                             //console.log(gameList.textContent);
                                 //title.textContent =data[0].external
