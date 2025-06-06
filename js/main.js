@@ -18,9 +18,9 @@ const searchGame = () => {
 	fetch(API_URL + gameName)
 		.then((res) => res.json())
 		.then((data) => {
-            //console.log(data);
+            
 			data.forEach((games) => {
-				//console.log(games);
+				
                 const titleGame = document.createElement("p");
 				titleGame.textContent = games.external;
 				
@@ -33,16 +33,15 @@ const searchGame = () => {
             
                 console.log(gameList.textContent);
 				titleGame.addEventListener("click", () => {
-                            //console.log(gameList.textContent);
-                                //title.textContent =data[0].external
+                            
                                
                                 title.textContent = titleGame.textContent
-                //console.log(data);
+                
                 const clickGame = data.find(
                     (game) => game.external.toLowerCase() === title.textContent.toLowerCase()
                 );
                 img.setAttribute('src', clickGame.thumb)
-                //console.log(clickGame);
+                
                 const GAME_URL = 'http://store.steampowered.com/app/'
                 const ID_URL = clickGame.steamAppID;
                 steamLink.setAttribute('href', GAME_URL + ID_URL)
